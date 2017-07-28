@@ -1,0 +1,51 @@
+@import "virables";
+header {
+	div.container {
+		width: 100%;
+		height: 90vh;
+	}
+	div#woman {
+		width: 600px;
+		height: 500px;
+		background-image: url(../img/header/woman-header.png);
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		margin: auto;
+		top: 22%;
+	}
+	div.left-header {
+		position: absolute;
+		top: 10%;
+		left: 12%;
+		h1 {
+			font-size: 45px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		hr {
+			color: #fff;
+			background: #fff;
+			width: 15%;
+			height: 3px;
+			border: none;
+			opacity: 0.7;
+		}
+		p {
+			margin-top: 20px;
+			color: #fff;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+		}
+		span {
+			font-weight: 700;
+		}
+	}
+	.right-header{
+		background-image: url(../img/icon/form.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		width:100px;
+		height: 100px;
+		border:2px solid black;
+	}
+}

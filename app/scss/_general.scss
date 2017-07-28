@@ -1,0 +1,16 @@
+@import "virables";
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	background-color:$back-color;
+}
+
+h1{
+	color:#fff;
+}
+
+div.col-1-2{
+  		float: left;
+	}
