@@ -1,16 +1,61 @@
 @import "virables";
-*{
-	margin:0;
+* {
+	margin: 0;
 	box-sizing: border-box;
 }
-body{
-	background-color:$back-color;
+
+p,
+h1 {
+	font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-	color:#fff;
+span {
+	font-weight: 700;
 }
 
-div.col-1-2{
-  		float: left;
+hr {
+	width: 13%;
+	height: 3px;
+	border: none;
+}
+
+::-webkit-input-placeholder {
+	color: $back-color-two;
+}
+
+div.icon {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 10%;
+}
+
+img.icon_image {
+	width: 80%;
+}
+
+div.icon-text {
+	position: absolute;
+	left: 17%;
+	top: 25%;
+	p {
+		margin-top: 10px;
+		font-size: 12px;
+		line-height: 20px;
 	}
+}
+
+h3 {
+	color: #33f5bb;
+	font-size: 20px;
+	font-family: $ffontone;
+}
+
+hr {
+	margin-top: 2px;
+	height: 2px;
+	background-color: $napispog-color;
+	opacity: .2;
+	border: none;
+	width: 25px;
+}
