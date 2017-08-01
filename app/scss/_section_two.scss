@@ -1,0 +1,93 @@
+@import "virables";
+section#naszesta {
+	border: 1px solid red;
+	width: 100%;
+	height: 110vh;
+	background-image: url(../img/section_2/tlo-section.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-top: 670px;
+	img {
+		position: absolute;
+		left: 47.5%;
+		top: 12%
+	}
+	div.container {
+		border: 1px solid red;
+		background-image: url(../img/section_2/tlo_two.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 60%;
+		height: 80vh;
+		margin-left: 20%;
+		margin-top: 8%;
+		h2 {
+			margin-top: 10%;
+			color: $wb-color;
+		}
+		div.section_two_texts {
+			width: 100%;
+			height: 50vh;
+			border: 1px solid orange;
+			div.col-1-2-text {
+				border: 1px solid blue;
+				width: 50%;
+				height: 40vh;
+				float: left;
+				margin-top: 5vh;
+				text-align: justify;
+				h3 {
+					color: $wb-color;
+					font-size: 1.5em;
+					margin-left: 55px;
+					margin-top: 45px;
+				}
+				hr {
+					background-color: $wb-color;
+					width: 7%;
+					margin-left:55px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					opacity: 1;
+				}
+				p{
+					margin-left:55px;
+					font-size:12px;
+					font-family: $ffontone;
+					color: $wb-color;
+				}
+				button{
+					width: 50%;
+					height: 6vh;
+					border-style:none;
+					background-color: $wb-color;
+					border-radius:25px;
+					color:#0db;
+					font-family: $ffonttwo;
+					font-weight: 700;
+					transition: all .3s;
+					margin-left:55px;
+					margin-top:30px;
+					&:hover{
+						border:1px solid $back-color-two;
+						background-color:$wb-color-hover;
+						
+					}
+					&:active{
+						border-color:$wb-color;
+						background-color:$back-color;
+						color:$wb-color;
+					}
+				}
+			}
+			div.second_text{
+				button{
+					margin-top: 45px;
+				}
+			}
+		}
+	}
+}

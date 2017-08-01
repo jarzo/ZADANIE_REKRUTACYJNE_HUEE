@@ -6,6 +6,14 @@ p,
 h1 {
   font-family: 'Montserrat', sans-serif; }
 
+h2 {
+  font-size: 4em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+  text-align: center;
+  margin-top: 1%; }
+
 span {
   font-weight: 700; }
 
@@ -50,13 +58,14 @@ hr {
 
 header {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/header/fala-header.png);
+  background-size: cover;
+  background-position: center; }
   header div.container {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/header/fala-header.png);
-    background-size: cover;
-    background-position: center; }
+    width: 100%; }
     header div.container div#woman {
       background-image: url(../img/header/woman-header.png);
       width: 80%;
@@ -105,12 +114,12 @@ header {
           font-weight: 500;
           font-family: "Montserrat", sans-serif; }
         header div.container div.left-header button:hover {
-          color: #eee;
+          color: #ddd;
           background-color: #ee5588;
           transition: all .3s; }
         header div.container div.left-header button:active {
           color: #ee5588;
-          background-color: #eee; }
+          background-color: #ddd; }
       header div.container div.left-header p.note {
         font-size: 10px;
         word-spacing: normal; }
@@ -191,7 +200,7 @@ header {
             background-color: #fff;
             color: #ff9933; }
 
-section#section_one div.container {
+section#section_one {
   width: 100%;
   height: 130vh;
   background-position: center;
@@ -200,81 +209,165 @@ section#section_one div.container {
   margin-top: -165px;
   position: absolute;
   z-index: 0; }
-  section#section_one div.container h2 {
-    font-size: 4em;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    color: #333333;
-    text-align: center;
-    margin-top: 1%; }
-  section#section_one div.container div.number {
-    border: 1px solid red;
-    width: 70%;
-    height: 28vh;
-    margin-left: 14%;
-    margin-top: 2.7%; }
-    section#section_one div.container div.number div.onetwothree {
-      position: relative;
-      width: 33%;
-      height: 26vh;
-      display: inline-block;
-      margin-top: 1vh;
+  section#section_one div.container {
+    width: 100%; }
+    section#section_one div.container div.number {
+      border: 1px solid red;
+      width: 70%;
+      height: 28vh;
+      margin-left: 14%;
+      margin-top: 2.7%; }
+      section#section_one div.container div.number div.onetwothree {
+        position: relative;
+        width: 33%;
+        height: 26vh;
+        display: inline-block;
+        margin-top: 1vh;
+        border: 1px solid red; }
+      section#section_one div.container div.number div#number_one {
+        background-image: url(../img/number/number_one.png);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        section#section_one div.container div.number div#number_one div#icon_one {
+          position: absolute;
+          left: 17%;
+          top: 6%; }
+      section#section_one div.container div.number div#number_two {
+        background-image: url(../img/number/number_two.png);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        section#section_one div.container div.number div#number_two div#icon_two {
+          position: absolute;
+          left: 15%;
+          top: 3%; }
+      section#section_one div.container div.number div#number_three {
+        background-image: url(../img/number/number_three.png);
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        section#section_one div.container div.number div#number_three div#icon_three {
+          position: absolute;
+          left: 20%;
+          top: 3%; }
+        section#section_one div.container div.number div#number_three div.icon-text {
+          left: 20%; }
+    section#section_one div.container div.icon-buld {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 61%; }
+    section#section_one div.container div.section-one-text {
+      position: absolute;
+      width: 60%;
+      top: 67%;
+      left: 50%;
+      transform: translateX(-50%);
       border: 1px solid red; }
-    section#section_one div.container div.number div#number_one {
-      background-image: url(../img/number/number_one.png);
-      background-position: left;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      section#section_one div.container div.number div#number_one div#icon_one {
-        position: absolute;
-        left: 17%;
-        top: 6%; }
-    section#section_one div.container div.number div#number_two {
-      background-image: url(../img/number/number_two.png);
-      background-position: left;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      section#section_one div.container div.number div#number_two div#icon_two {
-        position: absolute;
-        left: 15%;
-        top: 3%; }
-    section#section_one div.container div.number div#number_three {
-      background-image: url(../img/number/number_three.png);
-      background-position: left;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      section#section_one div.container div.number div#number_three div#icon_three {
-        position: absolute;
-        left: 20%;
-        top: 3%; }
-      section#section_one div.container div.number div#number_three div.icon-text {
-        left: 20%; }
-  section#section_one div.container div.icon-buld {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 66%; }
-  section#section_one div.container div.section-one-text {
-    position: absolute;
-    width: 60%;
-    top: 72%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid red; }
-    section#section_one div.container div.section-one-text h3 {
-      font-size: 25px;
+      section#section_one div.container div.section-one-text h3 {
+        font-size: 25px;
+        text-align: center; }
+    section#section_one div.container div.buttons {
+      width: 60%;
+      position: absolute;
+      top: 78%;
+      border: 1px solid red;
+      left: 50%;
+      transform: translateX(-50%);
       text-align: center; }
-  section#section_one div.container div.buttons {
-    width: 60%;
-    height: auto;
+      section#section_one div.container div.buttons button {
+        width: 25%;
+        height: 6vh;
+        font-size: 15px;
+        margin-left: 25px;
+        color: #fff;
+        border: 1px solid #ee8822;
+        border-radius: 25px;
+        background-color: #ff9933;
+        transition: all .3s; }
+
+section#naszesta {
+  border: 1px solid red;
+  width: 100%;
+  height: 110vh;
+  background-image: url(../img/section_2/tlo-section.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 670px; }
+  section#naszesta img {
     position: absolute;
-    top: 85%;
+    left: 47.5%;
+    top: 12%; }
+  section#naszesta div.container {
     border: 1px solid red;
-    left: 50%;
-    transform: translateX(-50%); }
-    section#section_one div.container div.buttons button {
-      display: inline-block;
-      font-size: 15px;
-      width: 25%;
-      height: 5vh;
-      border: 1px solid #ee8822; }
+    background-image: url(../img/section_2/tlo_two.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 80vh;
+    margin-left: 20%;
+    margin-top: 8%; }
+    section#naszesta div.container h2 {
+      margin-top: 10%;
+      color: #fff; }
+    section#naszesta div.container div.section_two_texts {
+      width: 100%;
+      height: 50vh;
+      border: 1px solid orange; }
+      section#naszesta div.container div.section_two_texts div.col-1-2-text {
+        border: 1px solid blue;
+        width: 50%;
+        height: 40vh;
+        float: left;
+        margin-top: 5vh;
+        text-align: justify; }
+        section#naszesta div.container div.section_two_texts div.col-1-2-text h3 {
+          color: #fff;
+          font-size: 1.5em;
+          margin-left: 55px;
+          margin-top: 45px; }
+        section#naszesta div.container div.section_two_texts div.col-1-2-text hr {
+          background-color: #fff;
+          width: 7%;
+          margin-left: 55px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          opacity: 1; }
+        section#naszesta div.container div.section_two_texts div.col-1-2-text p {
+          margin-left: 55px;
+          font-size: 12px;
+          font-family: "Montserrat", sans-serif;
+          color: #fff; }
+        section#naszesta div.container div.section_two_texts div.col-1-2-text button {
+          width: 50%;
+          height: 6vh;
+          border-style: none;
+          background-color: #fff;
+          border-radius: 25px;
+          color: #0db;
+          font-family: "Lato", sans-serif;
+          font-weight: 700;
+          transition: all .3s;
+          margin-left: 55px;
+          margin-top: 30px; }
+          section#naszesta div.container div.section_two_texts div.col-1-2-text button:hover {
+            border: 1px solid #33f5cc;
+            background-color: #ddd; }
+          section#naszesta div.container div.section_two_texts div.col-1-2-text button:active {
+            border-color: #fff;
+            background-color: #33ffcc;
+            color: #fff; }
+      section#naszesta div.container div.section_two_texts div.second_text button {
+        margin-top: 45px; }
+
+section#lekarze {
+  border: 1px solid red;
+  background-image: url(../img/section_3/tlo_section_three.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  width: 100vh; }

@@ -1,22 +1,15 @@
 @import "virables";
 section#section_one {
+	width: 100%;
+	height: 130vh;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../img/section_1/tlo_1.png);
+	margin-top: -165px;
+	position: absolute;
+	z-index: 0;
 	div.container {
 		width: 100%;
-		height: 130vh;
-		background-position: center;
-		background-size: cover;
-		background-image: url(../img/section_1/tlo_1.png);
-		margin-top: -165px;
-		position: absolute;
-		z-index: 0;
-		h2 {
-			font-size: 4em;
-			font-weight: 700;
-			font-family: $ffontone;
-			color: $napispog-color;
-			text-align: center;
-			margin-top: 1%
-		}
 		div.number {
 			border: 1px solid red;
 			width: 70%;
@@ -72,12 +65,12 @@ section#section_one {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
-			top: 66%;
+			top: 61%;
 		}
 		div.section-one-text {
 			position: absolute;
 			width: 60%;
-			top: 72%;
+			top: 67%;
 			left: 50%;
 			transform: translateX(-50%);
 			border: 1px solid red;
@@ -88,18 +81,23 @@ section#section_one {
 		}
 		div.buttons {
 			width: 60%;
-			height: auto;
 			position: absolute;
-			top: 85%;
+			top: 78%;
 			border: 1px solid red;
 			left: 50%;
 			transform: translateX(-50%);
+			text-align: center;
 			button {
-				display: inline-block;
-				font-size: 15px;
 				width: 25%;
-				height: 5vh;
-				border:1px solid $icon-color-hover;
+				height: 6vh;
+				font-size: 15px;
+				margin-left: 25px;
+				color: $wb-color;
+				border: 1px solid $icon-color-hover;
+				border-radius: 25px;
+				background-color: $icon-color;
+				transition: all .3s;
+				#tbutton {}
 			}
 		}
 	}
