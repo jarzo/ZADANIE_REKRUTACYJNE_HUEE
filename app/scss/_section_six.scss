@@ -49,7 +49,7 @@ section#boy {
 				form {
 					text-align: justify;
 					div.form-1-2 {
-						border: 1px solid red;
+//						border: 1px solid red;
 						float: left;
 						width: 44%;
 						height: 66vh;
@@ -66,10 +66,10 @@ section#boy {
 							top: 10%;
 						}
 						div.inputs {
-							border: 1px solid orange;
+//							border: 1px solid orange;
 							width: 42%;
 							position: absolute;
-							margin-top: 16%;
+							margin-top: 20%;
 							input {
 								background-color: $back-color-two;
 								color: $back-color;
@@ -118,9 +118,9 @@ section#boy {
 							width: 10%;
 						}
 						div.form_text {
-							margin-top: 45%;
+							margin-top: 50%;
 							h2 {
-								font-size: 30px;
+								font-size: 35px;
 								color: $placeholder-color;
 								text-align: justify;
 								transition: all .3s;

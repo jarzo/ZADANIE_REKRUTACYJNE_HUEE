@@ -745,7 +745,6 @@ section#boy {
         section#boy div.container div.form_out div.form_in form {
           text-align: justify; }
           section#boy div.container div.form_out div.form_in form div.form-1-2 {
-            border: 1px solid red;
             float: left;
             width: 44%;
             height: 66vh;
@@ -759,10 +758,9 @@ section#boy {
             position: absolute;
             top: 10%; }
           section#boy div.container div.form_out div.form_in form div#form_first div.inputs {
-            border: 1px solid orange;
             width: 42%;
             position: absolute;
-            margin-top: 16%; }
+            margin-top: 20%; }
             section#boy div.container div.form_out div.form_in form div#form_first div.inputs input {
               background-color: #33f5cc;
               color: #33ffcc;
@@ -802,9 +800,9 @@ section#boy {
               margin-left: 6%;
               width: 10%; }
             section#boy div.container div.form_out div.form_in form div#form_second div.form_text {
-              margin-top: 45%; }
+              margin-top: 50%; }
               section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2 {
-                font-size: 30px;
+                font-size: 35px;
                 color: #11ddaa;
                 text-align: justify;
                 transition: all .3s; }
