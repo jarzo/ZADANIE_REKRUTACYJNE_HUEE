@@ -42,7 +42,9 @@
 
 						<h3>Zabieg<span> 7299zł</span> zamiast<span> 9600zł.</span></h3>
 						<form action="https://formspree.io/nebraska994@gamil.com" method="post">
-							<input type="email" name="email" placeholder="E-mail">
+							<input type="email" name="email" placeholder="E-mail" onfocus="if(this.value==''
+							  || this.value == 'Wpisz tekst')
+								 this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue; this.style.color='#fff'}" onkeyup="this.style.color='#ff9933'">
 							<br/>
 							<input type="checkbox" id="zgoda" name="zgoda">
 							<div class="div-zgoda">
@@ -436,18 +438,15 @@
 
 							<div class="inputs">
 
-								<input type="email" name="email" placeholder="E-mail" 
-								onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
+								<input type="email" name="email" placeholder="E-mail" onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
 								 this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue; this.style.color='#fff'}" onkeyup="this.style.color='#ff9933'">
-								 
-								<input type="text" name="imie" placeholder="Imię"
-								onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
+
+								<input type="text" name="imie" placeholder="Imię" onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
 								 this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue; this.style.color='#fff'}" onkeyup="this.style.color='#ff9933'">
-								 
-								<input type="text" name="nazwisko" placeholder="Nazwisko"
-								onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
+
+								<input type="text" name="nazwisko" placeholder="Nazwisko" onfocus="if(this.value=='' || this.value == 'Wpisz tekst')
 								 this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue; this.style.color='#fff'}" onkeyup="this.style.color='#ff9933'">
-								 
+
 								<input type="checkbox" id="zgoda" name="zgoda">
 								<div class="div-zgoda">
 									<p id="zgoda"> Wyrażam dobrowolnie zgode na przetwarzanie moich danych osobowych zawartych w niniejszym formularzu przez Optegra Polska Sp z.o.o z siedzibą w Warszawie(Administrator danchy), a także na ich przetwarzanie w celach marketingowych, w tym wysyłanie materiałów promocyjno-informacyjnych, oferowanych produktów i usług, zgodnie z Ustawą o ochronie danych osobowych. Zostałem poinformowany o przysługującym mi prawie dostępu do treści przekazywanych oraz prawie ich poprawiania oraz odwołania zgody lub złożenia sprzeciwu wobec udostępnianych danych.</p>
