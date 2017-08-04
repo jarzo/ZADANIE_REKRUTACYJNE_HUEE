@@ -760,11 +760,8 @@ section#boy {
           section#boy div.container div.form_out div.form_in form div#form_first div.inputs {
             width: 42%;
             position: absolute;
-<<<<<<< HEAD
-            margin-top: 18%; }
-=======
+            margin-top: 18%;
             margin-top: 20%; }
->>>>>>> d9cfeb232103c1f4fc6f7a3a4f8d9eb51929e42f
             section#boy div.container div.form_out div.form_in form div#form_first div.inputs input {
               background-color: #33f5cc;
               color: #33ffcc;
