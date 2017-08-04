@@ -4,19 +4,20 @@ section#lekarze {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	height: 130vh;
+	height: 140vh;
 	position: absolute;
 	margin-top: 1250px;
+	z-index: 0;
 	img {
 		position: absolute;
-		top: 25%;
+		top: 20%;
 		left: 47%;
 	}
 	div.container {
-		border: 1px solid red;
+//		border: 1px solid red;
 		width: 90%;
 		height: 81vh;
-		margin-top: 22%;
+		margin-top: 19%;
 		margin-left: 5%;
 		hr {
 			margin-left: 48%;
@@ -37,17 +38,15 @@ section#lekarze {
 			overflow: hidden;
 			position: relative;
 			div.slide-show {
-				border: 1px solid orange;
-				position: absolute;
+//				border: 1px solid orange;
 				height: 100%;
 				div.single-slide {
-					border: 1px solid blue;
-					position: absolute;
+//					border: 1px solid blue;
 					top: 0;
 					bottom: 0;
 					div.lekarze-1-2-3 {
 						position: absolute;
-						border: 1px solid red;
+//						border: 1px solid red;
 						width: 33.3%;
 						height: 55vh;
 						text-align: center;
@@ -86,6 +85,7 @@ section#lekarze {
 							&:hover {
 								color: $back-color-two;
 								border-color: $back-color-two;
+								background-color:$wb-color;
 							}
 							&:active {
 								color: $icon-color;
@@ -98,9 +98,15 @@ section#lekarze {
 					}
 					div#doctor_two {
 						margin-left: 33.5%;
+						button{
+							margin-top:10%;
+						}
 					}
 					div#doctor_three {
 						margin-left: 63.5%;
+						button{
+							margin-top:10%;
+						}
 					}
 				}
 			}

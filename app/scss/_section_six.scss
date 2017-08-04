@@ -1,0 +1,167 @@
+@import "virables";
+section#boy {
+	//	border:1px solid red;
+	width: 100%;
+	height: 180vh;
+	background-image: url(../img/section_6/tlo_section_6.png);
+	background-size: cover;
+	background-position: center;
+	margin-top: 3769px;
+	position: absolute;
+	z-index: 0;
+	div.container {
+		height: 130vh;
+		//		border: 1px solid red;
+		img {
+			position: absolute;
+			left: 47.5%;
+			top: 0;
+		}
+		h2 {
+			margin-top: 5%;
+			text-transform: uppercase;
+			span {
+				font-weight: 300;
+			}
+		}
+		div.boy_image {
+			width: 100%;
+			height: 100%;
+			background-image: url(../img/section_6/boy.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		div.form_out {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 25px;
+			width: 50%;
+			height: 70vh;
+			position: absolute;
+			left: 35%;
+			top: 30%;
+			div.form_in {
+				width: 96%;
+				height: 66vh;
+				background-color: rgba(51, 255, 204, 0.6);
+				border-radius: 25px;
+				margin-top: 2vh;
+				margin-left: 2%;
+				form {
+					text-align: justify;
+					div.form-1-2 {
+						border: 1px solid red;
+						float: left;
+						width: 44%;
+						height: 66vh;
+						margin-left: 4%;
+					}
+					div#form_first {
+						h3 {
+							font-family: $ffonttwo;
+							color: $napispog-color;
+							font-size: 22px;
+							font-weight: 300;
+							text-transform: uppercase;
+							position: absolute;
+							top: 10%;
+						}
+						div.inputs {
+							border: 1px solid orange;
+							width: 42%;
+							position: absolute;
+							margin-top: 16%;
+							input {
+								background-color: $back-color-two;
+								color: $back-color;
+								width: 100%;
+								height: 5vh;
+								border: none;
+								border-radius: 25px;
+								margin-top: 5%;
+								padding: 20px;
+								&:focus {
+									background-color: $wb-color;
+									font-weight: 600;
+								}
+							}
+							::-webkit-input-placeholder {
+								color: $placeholder-color;
+								font-family: $ffonttwo;
+								font-weight: 600;
+							}
+							input[type="checkbox"] {
+								width: auto;
+								position: absolute;
+								left: 1%;
+								top: 57%;
+								cursor: pointer;
+							}
+							div.div-zgoda {
+								width: 96%;
+								p#zgoda {
+									font-size: 7px;
+									margin-left: 6%;
+									margin-top: 8%;
+									text-align: left;
+									color: #777;
+									line-height: 11px;
+									text-align: justify;
+								}
+							}
+						}
+					}
+					div#form_second {
+						margin-left: 5%;
+						img {
+							margin-top: 11%;
+							margin-left: 6%;
+							width: 10%;
+						}
+						div.form_text {
+							margin-top: 45%;
+							h2 {
+								font-size: 30px;
+								color: $placeholder-color;
+								text-align: justify;
+								transition: all .3s;
+								&:hover {
+									color: $icon-color;
+								}
+							}
+							p {
+								margin-top: 5%;
+								color: $placeholder-color;
+								text-align: justify;
+								transition: all .3s;
+								&:hover {
+									color: $icon-color;
+								}
+							}
+						}
+						input[type="submit"] {
+							color: $wb-color;
+							font-family: $ffontone;
+							font-weight: 700;
+							font-size: 12px;
+							text-transform: uppercase;
+							padding: 15px 80px;
+							background-color: $icon-color;
+							border: none;
+							border: 1px solid $icon-color-hover;
+							border-radius: 25px;
+							margin-top: 25%;
+							transition: all .3s;
+							&:hover {
+								background-color: $icon-color-hover;
+							}
+							&:active {
+								background-color: $wb-color;
+								color: $icon-color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

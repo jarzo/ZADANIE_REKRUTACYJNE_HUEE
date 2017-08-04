@@ -11,7 +11,7 @@ section#section_one {
 	div.container {
 		width: 100%;
 		div.number {
-			border: 1px solid red;
+//			border: 1px solid red;
 			width: 70%;
 			height: 28vh;
 			margin-left: 14%;
@@ -22,7 +22,7 @@ section#section_one {
 				height: 26vh;
 				display: inline-block;
 				margin-top: 1vh;
-				border: 1px solid red;
+//				border: 1px solid red;
 			}
 			div#number_one {
 				background-image: url(../img/number/number_one.png);
@@ -73,7 +73,7 @@ section#section_one {
 			top: 67%;
 			left: 50%;
 			transform: translateX(-50%);
-			border: 1px solid red;
+//			border: 1px solid red;
 			h3 {
 				font-size: 25px;
 				text-align: center;
@@ -83,7 +83,7 @@ section#section_one {
 			width: 60%;
 			position: absolute;
 			top: 78%;
-			border: 1px solid red;
+//			border: 1px solid red;
 			left: 50%;
 			transform: translateX(-50%);
 			text-align: center;
@@ -96,8 +96,29 @@ section#section_one {
 				border: 1px solid $icon-color-hover;
 				border-radius: 25px;
 				background-color: $icon-color;
-				transition: all .3s;
-				#tbutton {}
+				transition: all .3s linear;
+				&:hover {
+					color: $wb-color-hover;
+					background-color: $icon-color-hover;
+				}
+				&:active {
+					color: $icon-color;
+					background-color: $wb-color;
+				}
+			}
+			button#tbutton {
+				text-decoration: none;
+				color: $wb-color;
+				transition: all .3s linear;
+				&:hover {
+					color: $wb-color-hover;
+				}
+				&:active {
+					color: $icon-color;
+				}
+				i {
+					color: $bl-color;
+				}
 			}
 		}
 	}

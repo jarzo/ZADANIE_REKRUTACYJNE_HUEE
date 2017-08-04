@@ -1,6 +1,8 @@
 * {
   margin: 0;
   box-sizing: border-box; }
+  * :focus {
+    outline: none; }
 
 p,
 h1 {
@@ -73,7 +75,7 @@ header {
       background-size: cover;
       background-position: center;
       position: absolute;
-      top: 13.3%;
+      top: 13.2%;
       left: 13.1%; }
     header div.container div.left-header {
       position: absolute;
@@ -119,7 +121,7 @@ header {
           transition: all .3s; }
         header div.container div.left-header button:active {
           color: #ee5588;
-          background-color: #ddd; }
+          background-color: #fff; }
       header div.container div.left-header p.note {
         font-size: 10px;
         word-spacing: normal; }
@@ -212,7 +214,6 @@ section#section_one {
   section#section_one div.container {
     width: 100%; }
     section#section_one div.container div.number {
-      border: 1px solid red;
       width: 70%;
       height: 28vh;
       margin-left: 14%;
@@ -222,8 +223,7 @@ section#section_one {
         width: 33%;
         height: 26vh;
         display: inline-block;
-        margin-top: 1vh;
-        border: 1px solid red; }
+        margin-top: 1vh; }
       section#section_one div.container div.number div#number_one {
         background-image: url(../img/number/number_one.png);
         background-position: left;
@@ -263,8 +263,7 @@ section#section_one {
       width: 60%;
       top: 67%;
       left: 50%;
-      transform: translateX(-50%);
-      border: 1px solid red; }
+      transform: translateX(-50%); }
       section#section_one div.container div.section-one-text h3 {
         font-size: 25px;
         text-align: center; }
@@ -272,7 +271,6 @@ section#section_one {
       width: 60%;
       position: absolute;
       top: 78%;
-      border: 1px solid red;
       left: 50%;
       transform: translateX(-50%);
       text-align: center; }
@@ -285,10 +283,25 @@ section#section_one {
         border: 1px solid #ee8822;
         border-radius: 25px;
         background-color: #ff9933;
-        transition: all .3s; }
+        transition: all .3s linear; }
+        section#section_one div.container div.buttons button:hover {
+          color: #ddd;
+          background-color: #ee8822; }
+        section#section_one div.container div.buttons button:active {
+          color: #ff9933;
+          background-color: #fff; }
+      section#section_one div.container div.buttons button#tbutton {
+        text-decoration: none;
+        color: #fff;
+        transition: all .3s linear; }
+        section#section_one div.container div.buttons button#tbutton:hover {
+          color: #ddd; }
+        section#section_one div.container div.buttons button#tbutton:active {
+          color: #ff9933; }
+        section#section_one div.container div.buttons button#tbutton i {
+          color: #000; }
 
 section#naszesta {
-  border: 1px solid red;
   width: 100%;
   height: 110vh;
   background-image: url(../img/section_2/tlo-section.png);
@@ -303,7 +316,7 @@ section#naszesta {
     left: 47.5%;
     top: 12%; }
   section#naszesta div.container {
-    border: 1px solid red;
+    border: 1px solid transparent;
     background-image: url(../img/section_2/tlo_two.png);
     background-position: center;
     background-size: contain;
@@ -317,10 +330,8 @@ section#naszesta {
       color: #fff; }
     section#naszesta div.container div.section_two_texts {
       width: 100%;
-      height: 50vh;
-      border: 1px solid orange; }
+      height: 50vh; }
       section#naszesta div.container div.section_two_texts div.col-1-2-text {
-        border: 1px solid blue;
         width: 50%;
         height: 40vh;
         float: left;
@@ -350,10 +361,11 @@ section#naszesta {
           background-color: #fff;
           border-radius: 25px;
           color: #0db;
+          text-decoration: none;
           font-family: "Lato", sans-serif;
           font-weight: 700;
           transition: all .3s;
-          margin-left: 55px;
+          margin-left: 65px;
           margin-top: 30px; }
           section#naszesta div.container div.section_two_texts div.col-1-2-text button:hover {
             border: 1px solid #33f5cc;
@@ -363,25 +375,25 @@ section#naszesta {
             background-color: #33ffcc;
             color: #fff; }
       section#naszesta div.container div.section_two_texts div.second_text button {
-        margin-top: 45px; }
+        margin-top: 48px; }
 
 section#lekarze {
   background-image: url(../img/section_3/tlo_section_three.png);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 130vh;
+  height: 140vh;
   position: absolute;
-  margin-top: 1250px; }
+  margin-top: 1250px;
+  z-index: 0; }
   section#lekarze img {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 47%; }
   section#lekarze div.container {
-    border: 1px solid red;
     width: 90%;
     height: 81vh;
-    margin-top: 22%;
+    margin-top: 19%;
     margin-left: 5%; }
     section#lekarze div.container hr {
       margin-left: 48%;
@@ -399,17 +411,12 @@ section#lekarze {
       overflow: hidden;
       position: relative; }
       section#lekarze div.container div#slider div.slide-show {
-        border: 1px solid orange;
-        position: absolute;
         height: 100%; }
         section#lekarze div.container div#slider div.slide-show div.single-slide {
-          border: 1px solid blue;
-          position: absolute;
           top: 0;
           bottom: 0; }
           section#lekarze div.container div#slider div.slide-show div.single-slide div.lekarze-1-2-3 {
             position: absolute;
-            border: 1px solid red;
             width: 33.3%;
             height: 55vh;
             text-align: center; }
@@ -443,7 +450,8 @@ section#lekarze {
               transition: all .3s; }
               section#lekarze div.container div#slider div.slide-show div.single-slide div.lekarze-1-2-3 button:hover {
                 color: #33f5cc;
-                border-color: #33f5cc; }
+                border-color: #33f5cc;
+                background-color: #fff; }
               section#lekarze div.container div#slider div.slide-show div.single-slide div.lekarze-1-2-3 button:active {
                 color: #ff9933;
                 border-color: #ff9933; }
@@ -451,8 +459,12 @@ section#lekarze {
             margin-left: 3.5%; }
           section#lekarze div.container div#slider div.slide-show div.single-slide div#doctor_two {
             margin-left: 33.5%; }
+            section#lekarze div.container div#slider div.slide-show div.single-slide div#doctor_two button {
+              margin-top: 10%; }
           section#lekarze div.container div#slider div.slide-show div.single-slide div#doctor_three {
             margin-left: 63.5%; }
+            section#lekarze div.container div#slider div.slide-show div.single-slide div#doctor_three button {
+              margin-top: 10%; }
       section#lekarze div.container div#slider div.slider-arrows a {
         top: 50%;
         transform: translateY(-50%);
@@ -470,3 +482,356 @@ section#lekarze {
         position: absolute;
         right: 0;
         z-index: 10; }
+
+section#zabiegi {
+  width: 100%;
+  height: 140vh;
+  background-image: url(../img/section_4/tlo_section_4.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  margin-top: 2100px; }
+  section#zabiegi img {
+    position: absolute;
+    left: 46%;
+    top: 13%; }
+  section#zabiegi h2 {
+    margin-top: 14%;
+    color: #fff; }
+  section#zabiegi hr {
+    background-color: #fff;
+    width: 5%;
+    height: 1px;
+    opacity: 1;
+    margin-left: 48%;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+  section#zabiegi p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff; }
+  section#zabiegi h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 20px; }
+  section#zabiegi h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: .5%; }
+  section#zabiegi div.kafelki {
+    width: 65%;
+    height: 30vh;
+    position: absolute;
+    left: 17.5%; }
+    section#zabiegi div.kafelki div.kafelek {
+      width: 18%;
+      float: left;
+      height: inherit;
+      margin-left: 1.6%;
+      color: #33ffcc;
+      font-family: "Montserrat", sans-serif;
+      transition: all .3s; }
+      section#zabiegi div.kafelki div.kafelek:hover {
+        color: #ff9933; }
+      section#zabiegi div.kafelki div.kafelek div.kf_up {
+        background-color: #fff;
+        height: 50%;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 25px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+        section#zabiegi div.kafelki div.kafelek div.kf_up p {
+          color: #33ffcc;
+          font-size: 15px;
+          font-weight: 500; }
+      section#zabiegi div.kafelki div.kafelek div.kf_down {
+        height: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px; }
+        section#zabiegi div.kafelki div.kafelek div.kf_down h5 {
+          color: #33ffcc;
+          padding-top: 30px;
+          transition: all .3s; }
+          section#zabiegi div.kafelki div.kafelek div.kf_down h5:hover {
+            color: #ff9933; }
+
+section#opinie {
+  width: 100%;
+  height: 130vh;
+  background-image: url(../img/section_5/tlo_section_5.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 0;
+  margin-top: 2900px; }
+  section#opinie div.container div.image-icon {
+    text-align: center;
+    margin-top: 10%; }
+  section#opinie div.container h2 {
+    margin-top: 1%; }
+  section#opinie div.container hr {
+    width: 5%;
+    height: 1px;
+    opacity: 1;
+    margin-left: 48%;
+    margin-top: 1%;
+    margin-bottom: 1%; }
+  section#opinie div.container p {
+    text-align: center;
+    font-size: 1.5em; }
+  section#opinie div.container div#slider_opinie {
+    width: 80%;
+    height: 55vh;
+    margin: auto;
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative; }
+    section#opinie div.container div#slider_opinie div.slide-show-opinie {
+      height: 100%; }
+      section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie {
+        top: 0;
+        bottom: 0; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 {
+          position: absolute;
+          width: 33.3%;
+          height: 55vh;
+          text-align: justify; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 div.user {
+            width: 100px;
+            height: 100px;
+            background-color: #33ffcc;
+            margin: auto;
+            margin-top: 10%;
+            margin-left: 10%;
+            border-radius: 50px; }
+            section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 div.user img {
+              width: 10%;
+              position: absolute;
+              top: 14%;
+              left: 17.5%; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 h5 {
+            margin-top: 3%;
+            margin-left: 10%;
+            font-size: 15px;
+            font-family: "Lato", sans-serif; }
+            section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 h5 span {
+              font-weight: 100; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 div.star {
+            margin-left: 10%;
+            margin-top: 3%;
+            color: #33ffcc;
+            transition: all .3s; }
+            section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 div.star:hover {
+              color: #ff9933; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 h4 {
+            margin-top: 1%;
+            font-size: 22px;
+            font-weight: 900;
+            margin-left: 10%;
+            font-family: "Lato", sans-serif;
+            color: #333333; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 hr {
+            width: 7%;
+            height: 1px;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div.opinie-1-2-3 p {
+            line-height: 15px;
+            font-size: 12px;
+            margin-left: 10%;
+            text-align: justify; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_one,
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_four {
+          margin-left: 3.5%; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_two {
+          margin-left: 33.5%; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_two div.user_two {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 10%;
+            margin-left: 10%; }
+            section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_two div.user_two img {
+              position: absolute;
+              width: 28%;
+              top: 7%;
+              left: 10%; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_three {
+          margin-left: 63.5%; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_five {
+          margin-left: 33.5%; }
+        section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_six {
+          margin-left: 63.5%; }
+          section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_six div.user_two {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-top: 10%;
+            margin-left: 10%; }
+            section#opinie div.container div#slider_opinie div.slide-show-opinie div.single-slide-opinie div#opinie_six div.user_two img {
+              position: absolute;
+              width: 28%;
+              top: 7%;
+              left: 10%; }
+    section#opinie div.container div#slider_opinie div.slider-arrows a {
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      color: #333333; }
+      section#opinie div.container div#slider_opinie div.slider-arrows a:hover {
+        color: #33ffcc; }
+        section#opinie div.container div#slider_opinie div.slider-arrows a:hover:active {
+          color: #ff9933; }
+    section#opinie div.container div#slider_opinie div.slider-arrows a.prev-slide {
+      position: absolute;
+      left: 0;
+      z-index: 10; }
+    section#opinie div.container div#slider_opinie div.slider-arrows a.next-slide {
+      position: absolute;
+      right: 0;
+      z-index: 10; }
+
+section#boy {
+  width: 100%;
+  height: 180vh;
+  background-image: url(../img/section_6/tlo_section_6.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 3769px;
+  position: absolute;
+  z-index: 0; }
+  section#boy div.container {
+    height: 130vh; }
+    section#boy div.container img {
+      position: absolute;
+      left: 47.5%;
+      top: 0; }
+    section#boy div.container h2 {
+      margin-top: 5%;
+      text-transform: uppercase; }
+      section#boy div.container h2 span {
+        font-weight: 300; }
+    section#boy div.container div.boy_image {
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/section_6/boy.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    section#boy div.container div.form_out {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 25px;
+      width: 50%;
+      height: 70vh;
+      position: absolute;
+      left: 35%;
+      top: 30%; }
+      section#boy div.container div.form_out div.form_in {
+        width: 96%;
+        height: 66vh;
+        background-color: rgba(51, 255, 204, 0.6);
+        border-radius: 25px;
+        margin-top: 2vh;
+        margin-left: 2%; }
+        section#boy div.container div.form_out div.form_in form {
+          text-align: justify; }
+          section#boy div.container div.form_out div.form_in form div.form-1-2 {
+            border: 1px solid red;
+            float: left;
+            width: 44%;
+            height: 66vh;
+            margin-left: 4%; }
+          section#boy div.container div.form_out div.form_in form div#form_first h3 {
+            font-family: "Lato", sans-serif;
+            color: #333333;
+            font-size: 22px;
+            font-weight: 300;
+            text-transform: uppercase;
+            position: absolute;
+            top: 10%; }
+          section#boy div.container div.form_out div.form_in form div#form_first div.inputs {
+            border: 1px solid orange;
+            width: 42%;
+            position: absolute;
+            margin-top: 16%; }
+            section#boy div.container div.form_out div.form_in form div#form_first div.inputs input {
+              background-color: #33f5cc;
+              color: #33ffcc;
+              width: 100%;
+              height: 5vh;
+              border: none;
+              border-radius: 25px;
+              margin-top: 5%;
+              padding: 20px; }
+              section#boy div.container div.form_out div.form_in form div#form_first div.inputs input:focus {
+                background-color: #fff;
+                font-weight: 600; }
+            section#boy div.container div.form_out div.form_in form div#form_first div.inputs ::-webkit-input-placeholder {
+              color: #11ddaa;
+              font-family: "Lato", sans-serif;
+              font-weight: 600; }
+            section#boy div.container div.form_out div.form_in form div#form_first div.inputs input[type="checkbox"] {
+              width: auto;
+              position: absolute;
+              left: 1%;
+              top: 57%;
+              cursor: pointer; }
+            section#boy div.container div.form_out div.form_in form div#form_first div.inputs div.div-zgoda {
+              width: 96%; }
+              section#boy div.container div.form_out div.form_in form div#form_first div.inputs div.div-zgoda p#zgoda {
+                font-size: 7px;
+                margin-left: 6%;
+                margin-top: 8%;
+                text-align: left;
+                color: #777;
+                line-height: 11px;
+                text-align: justify; }
+          section#boy div.container div.form_out div.form_in form div#form_second {
+            margin-left: 5%; }
+            section#boy div.container div.form_out div.form_in form div#form_second img {
+              margin-top: 11%;
+              margin-left: 6%;
+              width: 10%; }
+            section#boy div.container div.form_out div.form_in form div#form_second div.form_text {
+              margin-top: 45%; }
+              section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2 {
+                font-size: 30px;
+                color: #11ddaa;
+                text-align: justify;
+                transition: all .3s; }
+                section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2:hover {
+                  color: #ff9933; }
+              section#boy div.container div.form_out div.form_in form div#form_second div.form_text p {
+                margin-top: 5%;
+                color: #11ddaa;
+                text-align: justify;
+                transition: all .3s; }
+                section#boy div.container div.form_out div.form_in form div#form_second div.form_text p:hover {
+                  color: #ff9933; }
+            section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"] {
+              color: #fff;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 700;
+              font-size: 12px;
+              text-transform: uppercase;
+              padding: 15px 80px;
+              background-color: #ff9933;
+              border: none;
+              border: 1px solid #ee8822;
+              border-radius: 25px;
+              margin-top: 25%;
+              transition: all .3s; }
+              section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"]:hover {
+                background-color: #ee8822; }
+              section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"]:active {
+                background-color: #fff;
+                color: #ff9933; }
