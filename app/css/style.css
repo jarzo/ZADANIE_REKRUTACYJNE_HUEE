@@ -734,7 +734,7 @@ section#boy {
       height: 70vh;
       position: absolute;
       left: 35%;
-      top: 30%; }
+      top: 20%; }
       section#boy div.container div.form_out div.form_in {
         width: 96%;
         height: 66vh;
@@ -745,7 +745,6 @@ section#boy {
         section#boy div.container div.form_out div.form_in form {
           text-align: justify; }
           section#boy div.container div.form_out div.form_in form div.form-1-2 {
-            border: 1px solid red;
             float: left;
             width: 44%;
             height: 66vh;
@@ -759,10 +758,9 @@ section#boy {
             position: absolute;
             top: 10%; }
           section#boy div.container div.form_out div.form_in form div#form_first div.inputs {
-            border: 1px solid orange;
             width: 42%;
             position: absolute;
-            margin-top: 16%; }
+            margin-top: 18%; }
             section#boy div.container div.form_out div.form_in form div#form_first div.inputs input {
               background-color: #33f5cc;
               color: #33ffcc;
@@ -771,7 +769,7 @@ section#boy {
               border: none;
               border-radius: 25px;
               margin-top: 5%;
-              padding: 20px; }
+              padding: 25px; }
               section#boy div.container div.form_out div.form_in form div#form_first div.inputs input:focus {
                 background-color: #fff;
                 font-weight: 600; }
@@ -783,14 +781,14 @@ section#boy {
               width: auto;
               position: absolute;
               left: 1%;
-              top: 57%;
+              top: 61%;
               cursor: pointer; }
             section#boy div.container div.form_out div.form_in form div#form_first div.inputs div.div-zgoda {
               width: 96%; }
               section#boy div.container div.form_out div.form_in form div#form_first div.inputs div.div-zgoda p#zgoda {
-                font-size: 7px;
+                font-size: 8px;
                 margin-left: 6%;
-                margin-top: 8%;
+                margin-top: 9%;
                 text-align: left;
                 color: #777;
                 line-height: 11px;
@@ -802,16 +800,16 @@ section#boy {
               margin-left: 6%;
               width: 10%; }
             section#boy div.container div.form_out div.form_in form div#form_second div.form_text {
-              margin-top: 45%; }
+              margin-top: 50%; }
               section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2 {
-                font-size: 30px;
+                font-size: 35px;
                 color: #11ddaa;
                 text-align: justify;
                 transition: all .3s; }
                 section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2:hover {
                   color: #ff9933; }
               section#boy div.container div.form_out div.form_in form div#form_second div.form_text p {
-                margin-top: 5%;
+                margin-top: 9%;
                 color: #11ddaa;
                 text-align: justify;
                 transition: all .3s; }
@@ -828,10 +826,22 @@ section#boy {
               border: none;
               border: 1px solid #ee8822;
               border-radius: 25px;
-              margin-top: 25%;
+              margin-top: 20%;
               transition: all .3s; }
               section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"]:hover {
                 background-color: #ee8822; }
               section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"]:active {
                 background-color: #fff;
                 color: #ff9933; }
+
+footer {
+  border: 1px solid red;
+  background-image: url(../img/footer/tlo_footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  z-index: 2;
+  margin-top: 4800px; }
