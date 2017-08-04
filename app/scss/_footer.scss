@@ -1,7 +1,6 @@
 @import "virables";
-
-footer{
-	border:1px solid red;
+footer {
+//	border: 1px solid red;
 	background-image: url(../img/footer/tlo_footer.png);
 	background-size: cover;
 	background-position: center;
@@ -9,8 +8,125 @@ footer{
 	width: 100%;
 	height: 70vh;
 	position: absolute;
-	z-index:2;
-	margin-top: 4800px;
-	
-	
+	z-index: 2;
+	margin-top: 4668px;
+	div.container {
+//		border: 1px solid blue;
+		overflow: hidden;
+		width: 80%;
+		height: 40vh;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		div.big_logo {
+//			border: 1px solid red;
+			background-image: url(../img/footer/duze_logo.png);
+			background-position: top;
+			background-size: cover;
+			width: 55%;
+			height: 40vh;
+			position: absolute;
+			left: 50%;
+			bottom: -20%;
+			transform: translateX(-50%);
+			div.footer-1-2-3 {
+//				border: 1px solid red;
+				float: left;
+				width: 33.3%;
+				height: 15vh;
+				margin-top: 12%;
+				h5 {
+					font-size: 9px;
+					font-family: $ffontone;
+					color: $napispog-color;
+				}
+			}
+			div#footer_one {
+				a {
+					text-decoration: none;
+					margin-left: 10%;
+					p {
+						font-size: 9px;
+						color: $napispog-color;
+					}
+				}
+			}
+			div#footer_two {
+				i {
+					font-size: 10px;
+					margin-left: 43%;
+					color: red;
+					padding: 10px 12px;
+					background-color: #3b5998;
+					border-radius: 25px;
+					transition: all .3s;
+					&:hover {
+						color: $wb-color;
+						background-color: #4c6999;
+					}
+					&:active {
+						color: #3b5998;
+						background-color: $wb-color;
+					}
+				}
+				a.kontakt {
+					font-family: $ffonttwo;
+					color: $napispog-color;
+					text-decoration: none;
+					font-size: 10px;
+					margin-left: 25%;
+					transition: all .3s;
+					&:hover {
+						color: $back-color;
+					}
+				}
+				p.infolinia {
+					font-family: $ffonttwo;
+					font-size: 10px;
+					margin-left: 28%;
+					a {
+						text-decoration: none;
+						font-size: 10px;
+						color: $back-color;
+						font-family: $ffontone;
+					}
+				}
+				a.website {
+					font-size: 10px;
+					color: $back-color;
+					text-decoration: none;
+					font-family: $ffontone;
+					margin-left: 26%;
+				}
+			}
+			div#footer_three {
+				a {
+					text-decoration: none;
+					h5 {
+						color: $wb-color;
+						margin-left: 30%;
+						margin-top: 15%;
+						font-family: $ffontone;
+						text-transform: uppercase;
+						transition: all .3s;
+						&:hover{
+							color: $back-color;
+						}
+					}
+				}
+			}
+		}
+		div.small_logo {
+			position: absolute;
+			width: 20%;
+			height: 10vh;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
