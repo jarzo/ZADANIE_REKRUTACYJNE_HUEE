@@ -119,6 +119,15 @@ section#boy {
 							margin-left: 6%;
 							width: 10%;
 						}
+						.wal{
+							float: left;
+						}
+						ul#wiadomosc{
+								color: red;
+								font-size: 14px;
+								margin-top: 20%;
+								margin-left:20%;
+							}
 						div.form_text {
 							margin-top: 50%;
 							h2 {
@@ -139,6 +148,7 @@ section#boy {
 									color: $icon-color;
 								}
 							}
+							
 						}
 						input[type="submit"] {
 							color: $wb-color;
@@ -152,6 +162,7 @@ section#boy {
 							border: 1px solid $icon-color-hover;
 							border-radius: 25px;
 							margin-top: 20%;
+							cursor: pointer;
 							transition: all .3s;
 							&:hover {
 								background-color: $icon-color-hover;

@@ -800,6 +800,13 @@ section#boy {
               margin-top: 11%;
               margin-left: 6%;
               width: 10%; }
+            section#boy div.container div.form_out div.form_in form div#form_second .wal {
+              float: left; }
+            section#boy div.container div.form_out div.form_in form div#form_second ul#wiadomosc {
+              color: red;
+              font-size: 14px;
+              margin-top: 20%;
+              margin-left: 20%; }
             section#boy div.container div.form_out div.form_in form div#form_second div.form_text {
               margin-top: 50%; }
               section#boy div.container div.form_out div.form_in form div#form_second div.form_text h2 {
@@ -828,6 +835,7 @@ section#boy {
               border: 1px solid #ee8822;
               border-radius: 25px;
               margin-top: 20%;
+              cursor: pointer;
               transition: all .3s; }
               section#boy div.container div.form_out div.form_in form div#form_second input[type="submit"]:hover {
                 background-color: #ee8822; }
