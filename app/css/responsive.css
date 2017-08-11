@@ -206,6 +206,15 @@
 		font-size: 25px;
 		margin-bottom: 5%;
 	}
+	section#boy div.container div.form_out{
+		width: 100%;
+		left:0;
+		height: 90vh;
+	}
+	section#boy div.container div.form_out div.form_in{
+		width:95%;
+		height:86vh;
+	}
 	
 	section#naszesta{
 		top:400%;
