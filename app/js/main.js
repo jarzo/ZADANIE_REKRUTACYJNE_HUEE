@@ -166,7 +166,7 @@ function walidujFormularz(event) {
 		msgEmail.innerHTML = "Wpisz Email!";
 		wiadomosc.appendChild(msgEmail);
 
-		inputEmail.style.backgroundColor = "red";
+//		inputEmail.style.backgroundColor = "red";
 		event.preventDefault();
 	}
 
@@ -174,7 +174,7 @@ function walidujFormularz(event) {
 		var msgImie = document.createElement("li");
 		msgImie.innerHTML = "Wpisz Imie!";
 		wiadomosc.appendChild(msgImie);
-		inputImie.style.backgroundColor = "red";
+//		inputImie.style.backgroundColor = "red";
 
 		event.preventDefault();
 	}
@@ -183,7 +183,7 @@ function walidujFormularz(event) {
 		var msgNazwisko = document.createElement("li");
 		msgNazwisko.innerHTML = "Wpisz Nazwisko!";
 		wiadomosc.appendChild(msgNazwisko);
-		inputNazwisko.style.backgroundColor = "red";
+//		inputNazwisko.style.backgroundColor = "red";
 
 		event.preventDefault();
 	}
